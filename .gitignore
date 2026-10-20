@@ -1,0 +1,33 @@
+# Private notes (resume bullets, interview prep)
+NOTES.md
+
+# Input video and large generated outputs
+video.mp4
+/*.mp4
+/demo.gif
+results.zip
+environment.txt
+
+# Model weights and TensorRT build artifacts (re-created by the notebook)
+*.pt
+*.onnx
+*.engine
+*.cache
+
+# Ultralytics outputs and downloaded datasets
+runs/
+datasets/
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

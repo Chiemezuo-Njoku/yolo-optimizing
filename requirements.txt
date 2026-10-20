@@ -1,0 +1,22 @@
+# Requirements for yolo_tensorrt_benchmark.ipynb
+# Needs a Linux machine with an NVIDIA GPU (tested target: Google Colab T4).
+# On Colab, the notebook installs what it needs itself; this file is for
+# reproducing the environment elsewhere: pip install -r requirements.txt
+
+# Deep learning + YOLO
+torch>=2.0            # must be a CUDA build (the default Linux wheel is)
+ultralytics>=8.3.0    # YOLO11 models + TensorRT export
+
+# TensorRT export pipeline (PyTorch -> ONNX -> TensorRT engine)
+onnx>=1.12.0
+onnxslim>=0.1.31
+tensorrt-cu12>=8.6,!=10.1.0   # match your PyTorch CUDA major version (cu12 on Colab)
+
+# Video, tables, charts
+opencv-python>=4.8
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.7
+
+# Also required (system tool, not pip): ffmpeg, used to encode the demo MP4 and GIF.
+# Colab has it preinstalled; on Ubuntu: sudo apt install ffmpeg
