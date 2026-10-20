@@ -6,7 +6,7 @@ video.mp4
 /*.mp4
 /demo.gif
 results.zip
-environment.txt
+/environment.txt
 
 # Model weights and TensorRT build artifacts (re-created by the notebook)
 *.pt
